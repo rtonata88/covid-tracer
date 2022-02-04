@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.phone-style {
+  width: 30%; 
+  height: 90vh; 
+  border-radius: 21px 21px  21px  21px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.app-header{
+  background-color:#ec4e8a;
+  color: #fff;
+}
+
+.bg-pink {
+  background-color: #ec4f90;
+}
+
+.map-container{
+  background-image: url('./assets/world-map-vector.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ec4f90;
+}
