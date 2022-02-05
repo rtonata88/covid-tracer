@@ -2,27 +2,38 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import useImage from '../../useImage';
 
-const Country = ({ country }) => (
-  <Link to={`/country/${country.id}`}>
-    <div className="col-sm-6 padding-0">
-      <div className="list-group">
-        <div className="list-group-item list-group-item-action d-flex gap-3 py-3">
-          <div className="d-flex gap-2 w-100 justify-content-between">
-            <small className="opacity-50 text-nowrap text-right">
-              <BsArrowRightCircle />
-            </small>
-            <p key={country.id}>
-              {country.name}
-              {' '}
-              {country.today_confirmed}
-            </p>
-          </div>
-        </div>
+const Country = ({ country, index }) => {
+  const { image } = useImage(country.name);
+
+  const styles = {
+    backgroundImage: `url(${image})`,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSizen: 'cover',
+  };
+
+  return (
+    <Link
+      to={`/country/${country.id}`}
+      className={`${
+        (index + 1) % 4 >= 2 ? 'bg-pink' : 'bg-pink-1'
+      } col-sm-6 country-block`}
+      style={styles}
+    >
+      <div>
+        <BsArrowRightCircle />
       </div>
-    </div>
-  </Link>
-);
+      <div className="country-name">
+        {country.name}
+        <p key={country.id}>
+          <small>{country.today_confirmed}</small>
+        </p>
+      </div>
+    </Link>
+  );
+};
 
 Country.propTypes = {
   country: PropTypes.shape({
@@ -30,6 +41,7 @@ Country.propTypes = {
     name: PropTypes.string.isRequired,
     today_confirmed: PropTypes.number.isRequired,
   }).isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default Country;
