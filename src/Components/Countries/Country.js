@@ -8,9 +8,9 @@ import useImage from '../../useImage';
 
 const Country = ({ country, index }) => {
   const dispatch = useDispatch();
-  const { image } = useImage(country.name);
+  const { image } = useImage(country.name, 128);
 
-  const styles = {
+  const backgroundImage = {
     backgroundImage: `url(${image})`,
     backgroundSizen: 'cover',
   };
@@ -20,6 +20,8 @@ const Country = ({ country, index }) => {
       title: country.name,
       heading: country.name,
       infections: `${country.today_confirmed} CASES`,
+      selectedCountry: country.name,
+      map: image,
     };
     dispatch(updateHeader(headerInfo));
   };
@@ -29,7 +31,7 @@ const Country = ({ country, index }) => {
       className={`${
         (index + 1) % 4 >= 2 ? 'bg-pink' : 'bg-pink-1'
       } col-sm-6 country-container`}
-      style={styles}
+      style={backgroundImage}
     >
       <Link
         to={`/${country.id}`}

@@ -242,7 +242,7 @@ const isoCode = {
   Zimbabwe: 'ZW',
 };
 
-const useImage = (fileName) => {
+const useImage = (fileName, imageSize) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [image, setImage] = useState(null);
@@ -252,7 +252,7 @@ const useImage = (fileName) => {
     const fetchImage = async () => {
       try {
         const response = await import(
-          `./assets/mapicons/all/${iso.toLowerCase()}/64.png`
+          `./assets/mapicons/all/${iso.toLowerCase()}/${imageSize}.png`
         );
         setImage(response.default);
       } catch (err) {
