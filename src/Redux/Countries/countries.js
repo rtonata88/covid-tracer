@@ -1,10 +1,23 @@
 const ENDPOINT = 'https://api.covid19tracking.narrativa.com/api?date_from=2020-03-10&date_to=2020-03-10';
 const FETCH_COUNTRIES = 'covidTracker/countries/FETCH_COUNTRIES';
+const UPDATE_HEADER_INFO = 'covidTracker/UPDATE_HEADER_INFO';
 
-const initialState = [];
+const initialState = {
+  countries: [],
+  headerInfo: {
+    title: 'COUNTRY INFECTIONS',
+    heading: 'COUNTRY INFECTIONS',
+    infections: '787,877 infections',
+  },
+};
 
 export const fetchCountries = (payload) => ({
   type: FETCH_COUNTRIES,
+  payload,
+});
+
+export const updateHeader = (payload) => ({
+  type: UPDATE_HEADER_INFO,
   payload,
 });
 
@@ -22,7 +35,16 @@ export const fetchCountriesData = () => async (dispatch) => {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_COUNTRIES: {
-      return action.payload;
+      return {
+        ...state,
+        countries: action.payload,
+      };
+    }
+    case UPDATE_HEADER_INFO: {
+      return {
+        ...state,
+        headerInfo: action.payload,
+      };
     }
     default: {
       return state;

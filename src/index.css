@@ -42,6 +42,10 @@ code {
   font-size: 11px;
 }
 
+.cover-page{
+  height: 150px !important;
+}
+
 .map-container{
   background-image: url('./assets/world-map-vector.png');
   background-repeat: no-repeat;
@@ -91,4 +95,23 @@ a:active {
   text-decoration: none;
 }
 
+.country-container {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.country-container::after {
+  content:"";
+  z-index:-3;
+  opacity: 0.5;
+}
 
+.country-cases{
+  display:flex;
+  justify-content:space-between;
+  height: 50px !important;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
