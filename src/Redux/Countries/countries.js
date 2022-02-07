@@ -1,3 +1,5 @@
+import worldMap from '../../assets/world-map-vector.png';
+
 const ENDPOINT = 'https://api.covid19tracking.narrativa.com/api?date_from=2020-03-10&date_to=2020-03-10';
 const FETCH_COUNTRIES = 'covidTracker/countries/FETCH_COUNTRIES';
 const UPDATE_HEADER_INFO = 'covidTracker/UPDATE_HEADER_INFO';
@@ -8,6 +10,7 @@ const initialState = {
     title: 'COUNTRY INFECTIONS',
     heading: 'COUNTRY INFECTIONS',
     infections: '787,877 infections',
+    map: worldMap,
   },
 };
 

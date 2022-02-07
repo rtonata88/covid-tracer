@@ -71,6 +71,13 @@ code {
   text-decoration: none;
   text-align:right;  
 }
+a {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
 
 a:link {
   text-transform: uppercase;
@@ -93,6 +100,7 @@ a:active {
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
+  color: #fff;
 }
 
 .country-container {
