@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CORONA VIRUS COUNTRY TRACKER
 
-## Available Scripts
+> A simple project implemented in React JS and Redux for state management to track number of corona active cases, recoveries and deaths across all the countries in the world.
 
-In the project directory, you can run:
+![World](src/assets/world-screenshot.png)
+![Country](src/assets/country-screenshot.png)
 
-### `npm start`
+Project created using `create-react-app` and implementing `react-redux` to retreive information from the Corona Tracking Project. Please credits below
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTMl, CSS, JavaScript, React-Bootstrap.
+- React.
+- Redux.
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://rtonata88-covid-tracking.netlify.app)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+* A functional computer with VS Code or any functional coding software.
+* Git bash or any version control software.
 
-### `npm run eject`
+### Setup
+* Copy the repo link and clone it in your local machine
+* You can execute the following command in your git bash:
+    ```` 
+    git clone https://github.com/rtonata88/covid-tracer.git
+    ````
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install
+* In your consle, run the following command to install the required dependencies:
+    ````
+    npm install
+    ````
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
+* You can build the files using React scripts to generate a `/build` folder with distribution files:
+    ````
+    npm run build
+    ````
+* Run React server to see the webpage working:
+    ````
+    npm start
+    ````
+* You can also open the [Netlify deployment](https://rtonata88-covid-tracking.netlify.app) to see a live version of the webpage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+👤 **Richard Tonata**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@rtonata88](https://github.com/rtonata88)
+- Twitter: [@rtonata](https://twitter.com/rtonata)
+- LinkedIn: [Richard Tonata](https://www.linkedin.com/in/richard-chambula-49198425/)
 
-### Analyzing the Bundle Size
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* <a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
+* Rockets, missions, pictures, and descriptions are provided by [SpaceXdata](https://docs.spacexdata.com/)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome!
 
-### Advanced Configuration
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License and Attributions
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
