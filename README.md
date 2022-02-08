@@ -18,6 +18,7 @@ Project created using `create-react-app` and implementing `react-redux` to retre
 ## Live Demo
 
 [Live Demo Link](https://rtonata88-covid-tracking.netlify.app)
+[Video Demo](https://www.loom.com/share/be8ba36a54134a959da65c7d9f163c5b)
 
 
 ## Getting Started
@@ -54,20 +55,13 @@ To get a local copy up and running follow these simple example steps.
 * You can also open the [Netlify deployment](https://rtonata88-covid-tracking.netlify.app) to see a live version of the webpage.
 
 
-
 ## Authors
-
 
 👤 **Richard Tonata**
 
 - GitHub: [@rtonata88](https://github.com/rtonata88)
 - Twitter: [@rtonata](https://twitter.com/rtonata)
 - LinkedIn: [Richard Tonata](https://www.linkedin.com/in/richard-chambula-49198425/)
-
-## Acknowledgements
-
-* <a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
-* Rockets, missions, pictures, and descriptions are provided by [SpaceXdata](https://docs.spacexdata.com/)
 
 ## 🤝 Contributing
 
@@ -79,10 +73,11 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## License and Attributions
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
 ## API Provisioning
 The API data has been provided by [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
+
+## License and Attributions
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Acknowledgements
 Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
