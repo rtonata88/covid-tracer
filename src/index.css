@@ -1,58 +1,75 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
 .phone-style {
-  width: 30%; 
-  height: 90vh; 
+  width: 30%;
+  height: 90vh;
   border-radius: 21px 21px  21px  21px;
 }
 
-.padding-0{
-    padding-right:0;
-    padding-left:0;
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.app-header{
-  background-color:#ec4f90;
+.app-header {
+  background-color: #ec4f90;
   color: #fff;
 }
 
 .bg-pink {
   background-color: #ec4e8a;
 }
+
 .bg-pink-1 {
   background-color: #ce4376;
 }
+
 .bg-pink-2 {
   background-color: #df4981;
 }
 
-.smaller{
+.smaller {
   font-size: 11px;
 }
 
-.cover-page{
+.cover-page {
   height: 150px !important;
 }
 
-.map-container{
+.map-container {
   background-image: url('./assets/world-map-vector.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ec4f90;
 }
-.country-block{
+
+.country-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,13 +81,14 @@ code {
   height: 150px !important;
 }
 
-.country-name{
+.country-name {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
-  text-align:right;  
+  text-align: right;
 }
+
 a {
   text-transform: uppercase;
   font-size: 11px;
@@ -87,7 +105,7 @@ a:link {
   color: #fff;
 }
 
-a:hover{
+a:hover {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
@@ -107,15 +125,16 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .country-container::after {
-  content:"";
-  z-index:-3;
+  content: "";
+  z-index: -3;
   opacity: 0.5;
 }
 
-.country-cases{
-  display:flex;
-  justify-content:space-between;
+.country-cases {
+  display: flex;
+  justify-content: space-between;
   height: 50px !important;
   color: #fff;
   cursor: pointer;
