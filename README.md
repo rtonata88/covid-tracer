@@ -17,8 +17,8 @@ Project created using `create-react-app` and implementing `react-redux` to retre
 
 ## Live Demo
 
-[Live Demo Link](https://rtonata88-covid-tracking.netlify.app)
-[Video Demo](https://www.loom.com/share/be8ba36a54134a959da65c7d9f163c5b)
+- [Live Demo Link](https://rtonata88-covid-tracking.netlify.app)
+- [Video Demo](https://www.loom.com/share/be8ba36a54134a959da65c7d9f163c5b)
 
 
 ## Getting Started
