@@ -81,6 +81,8 @@ Give a ⭐️ if you like this project!
 
 ## License and Attributions
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
+## API Provisioning
+The API data has been provided by [Narrativa API](https://covid19tracking.narrativa.com/index_en.html)
 
 ## Acknowledgements
 Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
