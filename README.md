@@ -55,7 +55,7 @@ To get a local copy up and running follow these simple example steps.
 * You can also open the [Netlify deployment](https://rtonata88-covid-tracking.netlify.app) to see a live version of the webpage.
 
 
-## Authors
+## Author
 
 👤 **Richard Tonata**
 
