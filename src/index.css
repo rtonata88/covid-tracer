@@ -142,3 +142,21 @@ a:active {
   font-weight: bold;
   padding: 10px;
 }
+
+.search-input {
+  width: 100%;
+  background-color: #ec4f90 !important;
+  border: 0 !important;
+}
+
+.search-input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  color: #641033;
+}
+
+.search-input:focus,
+.search-input:active {
+  outline: none !important;
+  border: 0 !important;
+}

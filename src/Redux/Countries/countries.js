@@ -3,6 +3,7 @@ import worldMap from '../../assets/world-map-vector.png';
 const ENDPOINT = 'https://api.covid19tracking.narrativa.com/api?date_from=2020-03-10&date_to=2020-03-10';
 const FETCH_COUNTRIES = 'covidTracker/countries/FETCH_COUNTRIES';
 const UPDATE_HEADER_INFO = 'covidTracker/UPDATE_HEADER_INFO';
+const SEARCH_COUNTRY = 'covidTracker/countries/SEARCH_COUNTRY';
 
 const initialState = {
   countries: [],
@@ -12,6 +13,7 @@ const initialState = {
     infections: '787,877 infections',
     map: worldMap,
   },
+  searchedCountries: [],
 };
 
 export const fetchCountries = (payload) => ({
@@ -21,6 +23,11 @@ export const fetchCountries = (payload) => ({
 
 export const updateHeader = (payload) => ({
   type: UPDATE_HEADER_INFO,
+  payload,
+});
+
+export const searchCountry = (payload) => ({
+  type: SEARCH_COUNTRY,
   payload,
 });
 
@@ -47,6 +54,16 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         headerInfo: action.payload,
+      };
+    }
+    case SEARCH_COUNTRY: {
+      const searched = state.countries.filter((country) => {
+        const lowerCaseCountry = country.name.toLowerCase();
+        return lowerCaseCountry.includes(action.payload);
+      });
+      return {
+        ...state,
+        searchedCountries: searched,
       };
     }
     default: {

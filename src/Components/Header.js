@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { BiMicrophone, BiCog } from 'react-icons/bi';
 import { useLocation, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { updateHeader } from '../Redux/Countries/countries';
 import worldMap from '../assets/world-map-vector.png';
 
-const Header = () => {
+const Header = ({ searchCountry }) => {
   const location = useLocation();
   const dispatch = useDispatch();
 
@@ -22,13 +23,19 @@ const Header = () => {
     dispatch(updateHeader(headerInfo));
   };
   let backgroundImage = {};
+  let filterContainer;
   if (location.pathname !== '/') {
-    // const { image } = '';
     backgroundImage = {
       backgroundImage: `url(${headerInfo.map})`,
       backgroundSize: 'cover',
       backgroundColor: '#ec4f90',
     };
+
+    filterContainer = (
+      <small>
+        <strong>CONFIRMED CASES BY COUNTRY</strong>
+      </small>
+    );
   } else {
     backgroundImage = {
       backgroundImage: `url(${headerInfo.map})`,
@@ -36,6 +43,15 @@ const Header = () => {
       backgroundSize: 'cover',
       backgroundColor: '#ec4f90',
     };
+
+    filterContainer = (
+      <input
+        type="text"
+        onChange={searchCountry}
+        className="form-control search-input"
+        placeholder="Search..."
+      />
+    );
   }
 
   return (
@@ -72,13 +88,15 @@ const Header = () => {
           </div>
         </div>
         <div className="d-flex bg-pink-2 text-white py-1 px-1 text-sm smaller">
-          <small>
-            <strong>CONFIRMED CASES BY COUNTRY</strong>
-          </small>
+          {filterContainer}
         </div>
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  searchCountry: PropTypes.func.isRequired,
 };
 
 export default Header;
