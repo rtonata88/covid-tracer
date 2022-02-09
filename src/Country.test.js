@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
+import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import Country from './Components/Countries/Country';
 
@@ -26,7 +27,9 @@ it('renders correctly', () => {
 
   const countryData = countries.map((country, index) => (
     <Provider store={store} key={country.id}>
-      <Country key={country.id} index={index} country={country} />
+      <BrowserRouter>
+        <Country key={country.id} index={index} country={country} />
+      </BrowserRouter>
     </Provider>
   ));
 
