@@ -6,8 +6,10 @@ import CountryCases from './CountryCases';
 const CountryDetail = () => {
   const { countryId } = useParams();
 
-  /* eslint-disable  max-len */
-  const countryData = useSelector((state) => state.countryReducer.countries.find((country) => country.id === countryId));
+  const countryData = useSelector((state) => {
+    const { countries } = state.countryReducer;
+    return countries.find((country) => country.id === countryId);
+  });
 
   return <>{countryData && <CountryCases country={countryData} />}</>;
 };
